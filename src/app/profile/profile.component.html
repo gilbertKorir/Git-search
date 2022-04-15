@@ -92,10 +92,10 @@
 <div class="container" style="text-align: center;">
 
     <div class="row" >
-        <div class="col-md-6" *ngFor="let repos of repos">
+        <div class="col-md-6" *ngFor="let repos of repos" appHighlight>
             <div class="card mt-3">
 
-                <p class="text-center pt-4" appHighlight>
+                <p class="text-center pt-4">
                     {{repos.name}}
                 </p>
                 <p>
