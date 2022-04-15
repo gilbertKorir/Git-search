@@ -1,9 +1,9 @@
 <div class="container">
   <!--Search bar-->
   <div class="row">
-    <div class="col-md-12">
-      <form class="well pt-4 w-50">
-        <div class="form-group text-center">
+    <div class="col-sm-12 justify-content-center">
+      <form class="well pt-4 w-50" #form = ngForm>
+        <div class="form-group">
           <input type="text" class="form-control" placeholder="Enter github username you want to search..." [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
         </div>
       </form>
@@ -19,7 +19,9 @@
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12 text-center">
             <img class="img-thumbnail myimg" src="{{user.avatar_url}}">
-            <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}">View User Profile</a>
+            <p class="pt-3">
+              <a class="btn btn-success btn-block" target="_blank" href="{{user.html_url}}">View User Profile</a>
+            </p>
           </div>
   
           <div class="col-md-8 col-sm-8 col-xs-12">
@@ -38,7 +40,7 @@
                 <strong>Location: </strong>{{user.location}}
               </li>
               <li class="list-group-item">
-                <strong> Email: </strong>{{user.email}}
+                <strong> Email: </strong>{{user.email_url}}
               </li>
              
             </ul>
@@ -85,7 +87,7 @@
   <!-- </div> -->
 
   <div>
-    <h2 class="text-center pt-4  font-size:70px;">My gitHub Repositories</h2>
+    <h2 class="text-center pt-4  font-size:70px;">My github Repositories</h2>
 </div>
 <div class="container" style="text-align: center;">
 
