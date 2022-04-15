@@ -21,7 +21,7 @@ export class GithubService {
   getUser() {
 
     return this._http.get('https://api.github.com/users/' + this.username)
-    map((result: any) => result);
+    .pipe(map(result => result));
     // let promise = new Promise<void>((resolve, reject)=>{
     //   (error:any)=>{
     //     reject()
@@ -30,7 +30,7 @@ export class GithubService {
   }
   getRepos() {
     return this._http.get(' https://api.github.com/users/' + this.username + '/repos')
-    map((result: any) => result);
+    .pipe(map(result=> result));
 }
 updateUser(username: string) {
   this.username = username;

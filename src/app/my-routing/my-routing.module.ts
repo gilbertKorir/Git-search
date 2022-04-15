@@ -14,11 +14,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    // HighlightDirective,
-    // ProfileComponent,
-    // NavbarComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forRoot(appRoutes)

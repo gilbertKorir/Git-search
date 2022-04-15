@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GithubService} from '../github.service';
+import { map } from "rxjs/operators"; 
 
 
 @Component({
@@ -8,6 +9,7 @@ import {GithubService} from '../github.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+
   user: any= [];
   repos: any= [];
   username!: string;
@@ -15,10 +17,7 @@ export class ProfileComponent implements OnInit {
     this._githubService.getUser().subscribe(user => {
       console.log(user);
       this.user = user;
-    }, (error)=>{
-      "User Not found"
-    }
-    );
+    });
     this._githubService.getRepos().subscribe(repos => {
       this.repos = repos;
     });
