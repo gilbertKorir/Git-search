@@ -19,9 +19,14 @@ export class GithubService {
 
   }
   getUser() {
+
     return this._http.get('https://api.github.com/users/' + this.username)
     map((result: any) => result);
-
+    // let promise = new Promise<void>((resolve, reject)=>{
+    //   (error:any)=>{
+    //     reject()
+    //   }
+    // })
   }
   getRepos() {
     return this._http.get(' https://api.github.com/users/' + this.username + '/repos')

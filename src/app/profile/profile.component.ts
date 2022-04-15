@@ -15,7 +15,10 @@ export class ProfileComponent implements OnInit {
     this._githubService.getUser().subscribe(user => {
       console.log(user);
       this.user = user;
-    });
+    }, (error)=>{
+      "User Not found"
+    }
+    );
     this._githubService.getRepos().subscribe(repos => {
       this.repos = repos;
     });

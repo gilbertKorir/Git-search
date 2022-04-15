@@ -13,20 +13,20 @@
   <div *ngIf="user">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title pt-4" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
+        <h3 class="panel-title pt-4 text-white" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12 text-center">
             <img class="img-thumbnail myimg" src="{{user.avatar_url}}">
             <p class="pt-3">
-              <a class="btn btn-success btn-block" target="_blank" href="{{user.html_url}}">View User Profile</a>
+              <a class="btn btn-success btn-block" target="_blank" href="{{user.html_url}}">View my Profile</a>
             </p>
           </div>
   
           <div class="col-md-8 col-sm-8 col-xs-12">
             <div class="stats">
-              <p>{{user.bio}}</p>
+              <p class="text-white" style="font-size: 20px;">{{user.bio}}</p>
               <span class="label label-success text-white bg-primary p-1">{{user.public_repos}} Public Repositories</span>&nbsp;
               <span class="label label-info text-white bg-success p-1">{{user.followers}} Followers</span>&nbsp;
               <span class="label label-info text-white bg-info p-1">{{user.following}} Following</span>&nbsp;
@@ -87,7 +87,7 @@
   <!-- </div> -->
 
   <div>
-    <h2 class="text-center pt-4  font-size:70px;">My github Repositories</h2>
+    <h2 class="text-center text-white pt-4  font-size:70px;">My github Repositories</h2>
 </div>
 <div class="container" style="text-align: center;">
 
