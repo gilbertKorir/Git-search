@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
-import { MyRoutingRoutingModule } from './my-routing-routing.module';
 import { Routes, RouterModule } from '@angular/router';
 import { ProfileComponent } from '../profile/profile.component';
 // import { ProfileComponent } from './profile/profile.component';

@@ -2,7 +2,7 @@
   <!--Search bar-->
   <div class="row">
     <div class="col-sm-12">
-      <form class="well pt-4 d-flex" #form = ngForm style="width: 800px;">
+      <form class="well pt-4 d-flex" style="width: 800px;">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Enter github username you want to search..." [(ngModel)]="username" name="username"  style="text-align:center"> 
         </div>&nbsp;&nbsp;
@@ -107,7 +107,7 @@
                     {{repos.language}}
                 </p>
                 <p>
-                   Date created: {{repos.created_at}}
+                   Date created: {{repos.created_at | date}}
                 </p>
                 <!-- <div class="card-footer text-center"> -->
                     <a href="{{ repos.html_url }}" class="pb-2" target="_blank"><button class="btn btn-success">check repo</button> </a>

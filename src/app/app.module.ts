@@ -8,10 +8,11 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HighlightDirective } from './highlight.directive';
 import { NavbarComponent } from './navbar/navbar.component';
-import { MyRoutingModule } from './my-routing/my-routing.module';
 import { GithubService } from './github.service';
-import { DateCountPipe } from './date-count.pipe';
+// import { DateCountPipe } from './date-count.pipe';
 import { MyReposComponent } from './my-repos/my-repos.component';
+import { DatePipePipe } from './date-pipe.pipe';
+import { MyRoutingModule } from './my-routings/my-routings.module';
 
 // const appRoutes: Routes = [];
 
@@ -22,8 +23,9 @@ import { MyReposComponent } from './my-repos/my-repos.component';
     ProfileComponent,
     HighlightDirective,
     NavbarComponent,
-    DateCountPipe,
+    // DateCountPipe,
     MyReposComponent,
+    DatePipePipe,
 
   ],
   imports: [
@@ -31,7 +33,7 @@ import { MyReposComponent } from './my-repos/my-repos.component';
     HttpClientModule,
     FormsModule,
     // RouterModule.forRoot(appRoutes),
-    MyRoutingModule
+    MyRoutingModule,
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]
