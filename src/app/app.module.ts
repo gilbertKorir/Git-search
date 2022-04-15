@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -13,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
   declarations: [
     AppComponent,
     ProfileComponent,
+    HighlightDirective,
 
   ],
   imports: [
