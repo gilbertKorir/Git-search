@@ -2,8 +2,8 @@
   <!--Search bar-->
   <div class="row">
     <div class="col-md-12">
-      <form class="well">
-        <div class="form-group">
+      <form class="well pt-4 w-50">
+        <div class="form-group text-center">
           <input type="text" class="form-control" placeholder="Enter github username you want to search..." [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
         </div>
       </form>
@@ -13,21 +13,21 @@
   <div *ngIf="user">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
+        <h3 class="panel-title pt-4" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
       </div>
       <div class="panel-body">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <img class="img-thumbnail" src="{{user.avatar_url}}">
+          <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+            <img class="img-thumbnail myimg" src="{{user.avatar_url}}">
             <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}">View User Profile</a>
           </div>
   
           <div class="col-md-8 col-sm-8 col-xs-12">
             <div class="stats">
               <p>{{user.bio}}</p>
-              <span class="label label-success">{{user.public_repos}} Public Repositories</span>
-              <span class="label label-info">{{user.followers}} Followers</span>
-              <span class="label label-info">{{user.following}} Following</span>
+              <span class="label label-success text-white bg-primary p-1">{{user.public_repos}} Public Repositories</span>&nbsp;
+              <span class="label label-info text-white bg-success p-1">{{user.followers}} Followers</span>&nbsp;
+              <span class="label label-info text-white bg-info p-1">{{user.following}} Following</span>&nbsp;
             </div>
             <br/>
             <ul class="list-group">
@@ -46,19 +46,18 @@
         </div>
       </div>
     </div>
-  <div class="container" style="padding: right 500px;">
+  <!-- <div class="container" style="padding: right 500px;">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title" style="text-align:center"><strong>User Repositories</strong></h3>
-      </div>
-      <div class="panel-body">
+      </div> -->
+      <!-- <div class="card justify-content-around pb-2">
         <div *ngFor="let repo of repos">
           <div class="row">
-            <div class="col-md-9">
-              <h4>
-                <a target="_blank" href="{{repo.html_url}}">{{repo.name}}</a>
-              </h4>
+            <div class=" card-body col-md-9">
+              <h4 class="text-center">{{repo.name}}</h4>
               <p>{{repo.description}}</p>
+              <a target="_blank" href="{{repo.html_url}}"><button class="btn btn-primary">check the repo</button></a>
             </div>
             <div class="col-md-3">
               
@@ -66,8 +65,54 @@
           </div>
           <hr>
         </div>
-      </div>
+      </div> -->
+     
+  <!-- </div>
+  </div>
+   <div class="container">
+        <div class="row">
+          <div class="col-sm-12" *ngFor="let repo of repos">
+            <div class="card"  style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{repo.name}}</h5>
+                <p class="card-text">{{repo.description}}</p>
+                <a target="_blank" href="{{repo.html_url}}"><button class="btn btn-primary">check the repo</button></a>
+          </div>
+          </div>
+          </div>
+        </div> -->
+       
+  <!-- </div> -->
+
+  <div>
+    <h2 class="text-center pt-4  font-size:70px;">My gitHub Repositories</h2>
+</div>
+<div class="container" style="text-align: center;">
+
+    <div class="row" >
+        <div class="col-md-6" *ngFor="let repos of repos">
+            <div class="card mt-3">
+
+                <p class="text-center pt-4">
+                    {{repos.name}}
+                </p>
+                <p>
+                    {{repos.description}}
+                </p>
+
+                <p>
+                    {{repos.language}}
+                </p>
+                <p>
+                   Date created: {{repos.created_at}}
+                </p>
+                <!-- <div class="card-footer text-center"> -->
+                    <a href="{{ repos.html_url }}" class="pb-2" target="_blank"><button class="btn btn-success">check repo</button> </a>
+                <!-- </div> -->
+
+            </div>
+        </div>
+
     </div>
-  </div>
-  </div>
-  </div>
+
+</div>
