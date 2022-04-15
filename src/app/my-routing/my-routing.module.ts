@@ -3,19 +3,26 @@ import { CommonModule } from '@angular/common';
 
 
 import { MyRoutingRoutingModule } from './my-routing-routing.module';
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { ProfileComponent } from '../profile/profile.component';
+// import { ProfileComponent } from './profile/profile.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 const appRoutes: Routes = [
   {path: '', component:ProfileComponent},
-  {path: 'navbar', component:ProfileComponent}
+  {path: 'navbar', component:NavbarComponent}
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    // HighlightDirective,
+    // ProfileComponent,
+    // NavbarComponent
+  ],
   imports: [
     CommonModule,
-    MyRoutingRoutingModule
-  ]
+    RouterModule.forRoot(appRoutes)
+  ],
+  exports: [RouterModule]
 })
 export class MyRoutingModule { }

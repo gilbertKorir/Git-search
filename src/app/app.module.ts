@@ -7,8 +7,11 @@ import {Routes, RouterModule} from '@angular/router'
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HighlightDirective } from './highlight.directive';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MyRoutingModule } from './my-routing/my-routing.module';
+import { GithubService } from './github.service';
 
-const appRoutes: Routes = [];
+// const appRoutes: Routes = [];
 
 
 @NgModule({
@@ -16,15 +19,17 @@ const appRoutes: Routes = [];
     AppComponent,
     ProfileComponent,
     HighlightDirective,
+    NavbarComponent,
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    // RouterModule.forRoot(appRoutes),
+    MyRoutingModule
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
