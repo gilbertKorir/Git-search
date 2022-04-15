@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {GithubService} from '../github.service';
-import { map } from "rxjs/operators"; 
-
+import { GithubService } from '../github.service';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'],
-  providers: [GithubService]
+  selector: 'app-my-repos',
+  templateUrl: './my-repos.component.html',
+  styleUrls: ['./my-repos.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class MyReposComponent implements OnInit {
 
   user: any= [];
   repos: any= [];

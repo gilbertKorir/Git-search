@@ -7,10 +7,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProfileComponent } from '../profile/profile.component';
 // import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from '../navbar/navbar.component';
-
+import { MyReposComponent } from '../my-repos/my-repos.component';
 const appRoutes: Routes = [
-  {path: '', component:ProfileComponent},
-  {path: 'navbar', component:NavbarComponent}
+  {path: 'profile', component:ProfileComponent},
+  {path: 'navbar', component:NavbarComponent},
+  {path: 'my-repos', component:MyReposComponent}
 ];
 
 @NgModule({

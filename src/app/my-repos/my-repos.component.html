@@ -1,0 +1,32 @@
+<div>
+    <h2 class="text-center text-white pt-4  font-size:70px;">My github Repositories</h2>
+</div>
+<div class="container" style="text-align: center;">
+
+    <div class="row" >
+        <div class="col-md-6" *ngFor="let repos of repos" appHighlight>
+            <div class="card mt-3">
+
+                <p class="text-center pt-4">
+                    {{repos.name}}
+                </p>
+                <p>
+                    {{repos.description}}
+                </p>
+
+                <p>
+                    {{repos.language}}
+                </p>
+                <p>
+                   Date created: {{repos.created_at}}
+                </p>
+                <!-- <div class="card-footer text-center"> -->
+                    <a href="{{ repos.html_url }}" class="pb-2" target="_blank"><button class="btn btn-success">check repo</button> </a>
+                <!-- </div> -->
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MyRoutingModule } from './my-routing/my-routing.module';
 import { GithubService } from './github.service';
 import { DateCountPipe } from './date-count.pipe';
+import { MyReposComponent } from './my-repos/my-repos.component';
 
 // const appRoutes: Routes = [];
 
@@ -22,6 +23,7 @@ import { DateCountPipe } from './date-count.pipe';
     HighlightDirective,
     NavbarComponent,
     DateCountPipe,
+    MyReposComponent,
 
   ],
   imports: [
