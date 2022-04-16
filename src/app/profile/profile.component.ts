@@ -23,8 +23,7 @@ export class ProfileComponent implements OnInit {
       this.repos = repos;
     });
   }
-  ngOnInit() {
-  }
+  ngOnInit() {}
    searchUser() {
      this._githubService.updateUser(this.username);
      this._githubService.getUser().subscribe(user => {
