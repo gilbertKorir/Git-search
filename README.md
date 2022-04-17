@@ -17,7 +17,7 @@
 
 ## Description
 
-<p>This quotes app is a web application which allows you to view the quotes, add or delete any quote you don't like.</p>
+<p>This is a web app that users search their username using a form, submit it, and see names and descriptions of that person's public repositories. Also repositories can be viewed.</p>
 
 <p align="center"><img src="https://github.com/gilbertKorir/Git-search/blob/master/src/assets/bg.jpg" height="300px" width = "70%"> </p>
   
