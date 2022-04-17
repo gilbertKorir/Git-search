@@ -19,14 +19,15 @@ export class GithubService {
 
   }
   getUser() {
-
+    interface ApiResponse{
+      
+    }
+    // let promise = new Promise<void>((resolve, reject)=>{
     return this._http.get('https://api.github.com/users/' + this.username)
     .pipe(map(result => result));
-    // let promise = new Promise<void>((resolve, reject)=>{
-    //   (error:any)=>{
-    //     reject()
-    //   }
     // })
+
+
   }
   getRepos() {
     return this._http.get(' https://api.github.com/users/' + this.username + '/repos')
