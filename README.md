@@ -29,7 +29,7 @@
 
 * Get connected to an internet.
   
-* Here is the live link: https://gilbertkorir.github.io/quotes-app/
+* Here is the live link: https://gilbertkorir.github.io/Git-search/
 
 [Back to the top](#git-search)
 
