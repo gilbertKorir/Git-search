@@ -48,7 +48,7 @@
 
 * git clone `https://github.com/gilbertKorir/Git-search`
 
-* cd quotes-app
+* cd Git-search
 
 * code . or atom . based on the text editor you have.
 
