@@ -19,7 +19,7 @@
 
 <p>This quotes app is a web application which allows you to view the quotes, add or delete any quote you don't like.</p>
 
-<p align="center"><img src="https://github.com/gilbertKorir/quotes-app/blob/master/src/assets/images/git.jpg" height="300px" width = "70%"> </p>
+<p align="center"><img src="https://github.com/gilbertKorir/Git-search/blob/master/src/assets/bg.jpg" height="300px" width = "70%"> </p>
   
  ---
 
