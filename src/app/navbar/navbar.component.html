@@ -1,11 +1,12 @@
 <div class="container-fluid navbar-dark bg-primary sticky-top pt-2">
     <div class="row">
-        <div class="col-md-6 pt-2">
-            <a class="navbar-brand bg-white text-primary" style="font-size: 26px;" [routerLink]="['/profile']"><b>Home</b></a>
-            <a class="navbar-brand text-primary bg-white" style="font-size: 26px;" routerLink='/my-repos'><b>My-Repos</b></a>
+        <div class="col-md-6 pt-2 links">
+            <a class="navbar-brand bg-white text-primary rounded-true" style="font-size: 26px;"routerLink='/profile'><b>Home</b></a>
+            <a class="navbar-brand bg-white text-primary" style="font-size: 26px;"routerLink='/profile'><b>Profile</b></a>
+            <a class="navbar-brand text-primary bg-white" style="font-size: 26px;" routerLink='/my-repos'><b>Repositories</b></a>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
-            <a class="navbar-brand" style="font-size: 40px;"  [routerLink]="['/profile']"><b><i class="fab fa-github"></i></b></a>
+            <a class="navbar-brand" style="font-size: 40px;"><b><i class="fab fa-github"></i></b></a>
             <a class="navbar-brand" style="font-size: 40px;"><b><i class="fab fa-facebook"></i></b></a>
             <a class="navbar-brand" style="font-size: 40px;"><b><i class="fab fa-linkedin"></i></b></a>
         </div>

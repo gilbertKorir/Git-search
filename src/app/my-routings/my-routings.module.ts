@@ -8,8 +8,9 @@ import { ProfileComponent } from '../profile/profile.component';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { MyReposComponent } from '../my-repos/my-repos.component';
 const appRoutes: Routes = [
-  {path: 'profile', component:ProfileComponent},
+
   {path: 'navbar', component:NavbarComponent},
+  {path: 'profile', component:ProfileComponent},
   {path: 'my-repos', component:MyReposComponent}
 ];
 
